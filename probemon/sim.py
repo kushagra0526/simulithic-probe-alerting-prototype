@@ -14,9 +14,9 @@ SLOT_H = 0.5
 
 def slices():
     out = {"all": set(range(len(ENVS)))}
-    for b in {c[0] for c in CELLS}:
+    for b in sorted({c[0] for c in CELLS}):
         out[f"browser={b}"] = {i for i, e in enumerate(ENVS) if e[0] == b}
-    for o in {c[1] for c in CELLS}:
+    for o in sorted({c[1] for c in CELLS}):
         out[f"os={o}"] = {i for i, e in enumerate(ENVS) if e[1] == o}
     out["slow networks"] = {i for i, e in enumerate(ENVS) if e[2] in SLOW}
     for b, o in CELLS:

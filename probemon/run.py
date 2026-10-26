@@ -24,7 +24,7 @@ def score(seeds, held):
                     used.add(id(e))
                     a["found"] += 1
                     a["ttd"].append((e[0] - inc["start"]) * sim.SLOT_H)
-                    a["attr"] += e[2] == inc["slice"]
+                    a["attr"] += e[2] is not None and sim.SLICES[e[2]] == sim.SLICES[inc["slice"]]    # same set of environments, e.g. "os=ios" and "safari on ios" are one slice
             a["false"] += sum(1 for e in eps if not any(i["flow"] == e[1] and i["start"] <= e[0] < i["end"] + 6 for i in w["incidents"]))
     out = {}
     for m, a in acc.items():

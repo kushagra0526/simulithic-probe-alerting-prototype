@@ -1,0 +1,54 @@
+{
+ "dev": {
+  "alert on first failure": {
+   "incidents_found_pct": 3,
+   "median_hours_to_alert": 0.2,
+   "false_alerts_per_flow_week": 5.18,
+   "slice_named_right_pct": null
+  },
+  "same environment fails twice": {
+   "incidents_found_pct": 90,
+   "median_hours_to_alert": 3.0,
+   "false_alerts_per_flow_week": 3.38,
+   "slice_named_right_pct": null
+  },
+  "3 of last 8 probes failed": {
+   "incidents_found_pct": 92,
+   "median_hours_to_alert": 0.5,
+   "false_alerts_per_flow_week": 2.03,
+   "slice_named_right_pct": null
+  },
+  "slice scan (per-network baseline + slice likelihood)": {
+   "incidents_found_pct": 97,
+   "median_hours_to_alert": 2.5,
+   "false_alerts_per_flow_week": 0.02,
+   "slice_named_right_pct": 80
+  }
+ },
+ "held_out": {
+  "alert on first failure": {
+   "incidents_found_pct": 3,
+   "median_hours_to_alert": 0.0,
+   "false_alerts_per_flow_week": 3.68,
+   "slice_named_right_pct": null
+  },
+  "same environment fails twice": {
+   "incidents_found_pct": 81,
+   "median_hours_to_alert": 4.0,
+   "false_alerts_per_flow_week": 5.25,
+   "slice_named_right_pct": null
+  },
+  "3 of last 8 probes failed": {
+   "incidents_found_pct": 81,
+   "median_hours_to_alert": 0.5,
+   "false_alerts_per_flow_week": 3.73,
+   "slice_named_right_pct": null
+  },
+  "slice scan (per-network baseline + slice likelihood)": {
+   "incidents_found_pct": 98,
+   "median_hours_to_alert": 3.0,
+   "false_alerts_per_flow_week": 0.06,
+   "slice_named_right_pct": 79
+  }
+ }
+}
